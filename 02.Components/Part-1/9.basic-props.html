@@ -10,7 +10,7 @@
 	<body>
 
 		<div id="app">
-			<my-component v-bind:my-name="name" v-bind:my-age="age"></my-component>
+			<my-component1 v-bind:my-name="name" v-bind:my-age="age"></my-component1>
 		</div>
 
 		<template id="myComponent">
@@ -40,7 +40,7 @@
 				age: 28
 			},
 			components: {
-				'my-component': {
+				'my-component1': {
 					template: '#myComponent',
 					props: ['myName', 'myAge']
 				}
