@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<link rel="stylesheet" href="//bootswatch.com/flatly/bootstrap.css"/>
+		<link rel="stylesheet" href="assets/css/bootstrap.css"/>
 		<link rel="stylesheet" href="assets/css/custom.css" />
 	</head>
 
@@ -39,7 +39,7 @@
 						<p>当前参数：<code>{{$route.params | json}}</code></p>
 						<p>路由名称：<code>{{$route.name}}</code></p>
 						<p>路由查询参数：<code>{{$route.query | json}}</code></p>
-						<!--<p>路由匹配项：<code>{{$route.matched | json}}</code></p>-->
+						<p>路由匹配项：<code>{{$route.matched | json}}</code></p>
 					</div>
 				</div>
 			</div>
@@ -171,6 +171,8 @@
 
 		var App = Vue.extend({})
 		router.start(App, '#app')
+
+		
 	</script>
 
 </html>
